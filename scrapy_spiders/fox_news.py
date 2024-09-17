@@ -4,7 +4,7 @@ class NewsSpider(scrapy.Spider):
     name = "fox_news"
     allowed_domains = ["www.foxnews.com"]
     start_urls = [
-        "https://www.foxnews.com/politics/who-ryan-wesley-routh-alleged-gunman-trump-golf-club"
+        "https://www.foxnews.com/politics/who-ryan-wesley-routh-alleged-gunman-trump-golf-club" ## You just need to change webadress.
     ]
 
     custom_settings = {

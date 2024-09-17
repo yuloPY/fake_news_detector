@@ -3,7 +3,7 @@ import scrapy
 class CnnNewsSpider(scrapy.Spider):
     name = "cnn_news"
     allowed_domains = ["edition.cnn.com"]
-    start_urls = ["https://edition.cnn.com/2024/09/16/us/gilgo-beach-killings-asian-doe/index.html"]
+    start_urls = ["https://edition.cnn.com/2024/09/16/us/gilgo-beach-killings-asian-doe/index.html"] # You just need to change webadress.
 
     custom_settings = {
         'ROBOTSTXT_OBEY': False,
