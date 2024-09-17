@@ -23,17 +23,17 @@ The code implements a text classification pipeline as follows:
  - Removing stopwords using the NLTK library.
 
 ## Feature Ectraction:
- - **TF-IDF Vectorization**:Converts text data into numerical features suitable for machine learningmodels.
+ - **TF-IDF Vectorization**:Converts text data into numerical features suitable for machine learning models.
 
 ## Classification:
- -The model uses the **PassiveAggressiveClassifier**, a linear model that works well for large-scale text data. It updates weights in response to misclassified examples in an aggressive    manner.
+ -The model uses the **PassiveAggressiveClassifier**, a linear model that works well for large-scale text data. It updates weights in response to misclassified examples in an aggressive manner.
 
 *you can check the **[open_model.ipynb](open_model\open_model.ipynb)** file for more details.*
 
 
 # Usage
 
-The main goal of mine project is scrap the data from **[FOX News](https://www.foxnews.com/)** and **[CNN US](https://edition.cnn.com/us)** and make a prediction with my **[fake_news_detector](fake_news_detector.ipynb)** model.
+The main goal of mine project is scrap the data from **[FOX News](https://www.foxnews.com/)** and **[CNN US](https://edition.cnn.com/us)** and make a prediction with my **[fake_news_detector](fake_news_detector\fake_news_detector.ipynb)** model.
 (I hope that is legal.)
 
 I will explain here how do you use it in your computer.
@@ -77,7 +77,7 @@ import scrapy
 
 class ExampleSpider(scrapy.Spider):
     name = "example"
-    allowed_domains = ["www.foxnews.com"]
+    allowed_domains = ["www.domain.com"]
     start_urls = ["example_foxpage_or_cnnpage.com"]
 
     def parse(self, response):
