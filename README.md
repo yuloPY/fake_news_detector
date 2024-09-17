@@ -8,7 +8,7 @@
 This project demonstrates how to classify news articles as **fake** or **real** using a **Passive Aggressive Classifier.** The dataset used is a collection of news articles, and the classification is done by processing the text data using **TF-IDF vectorization.**
 
 # Dataset
-The dataset used is a CSV file named **[news.csv](open_model\news.csv)**,which contains four columns:
+The dataset used is a CSV file named **[news.csv](open_model/news.csv)**,which contains four columns:
 - **ID**:The ID of the news.
 - **title**:The title of the news.
 - **text**:The content of the news.
@@ -28,12 +28,12 @@ The code implements a text classification pipeline as follows:
 ## Classification:
  -The model uses the **PassiveAggressiveClassifier**, a linear model that works well for large-scale text data. It updates weights in response to misclassified examples in an aggressive manner.
 
-*you can check the **[open_model.ipynb](open_model\open_model.ipynb)** file for more details.*
+*you can check the **[open_model.ipynb](open_model/open_model.ipynb)** file for more details.*
 
 
 # Usage
 
-The main goal of mine project is scrap the data from **[FOX News](https://www.foxnews.com/)** and **[CNN US](https://edition.cnn.com/us)** and make a prediction with my **[fake_news_detector](fake_news_detector\fake_news_detector.ipynb)** model.
+The main goal of mine project is scrap the data from **[FOX News](https://www.foxnews.com/)** and **[CNN US](https://edition.cnn.com/us)** and make a prediction with my **[fake_news_detector](fake_news_detector/fake_news_detector.ipynb)** model.
 (I hope that is legal.)
 
 I will explain here how do you use it in your computer.
@@ -84,8 +84,8 @@ class ExampleSpider(scrapy.Spider):
         pass
 ```
 
-**6.** If your page from FOX News use **[fox_news.py](scrapy_spider\fox_news.py)**.For CNN US use **[cnn_news.py](scrapy_spider\cnn_news.py)**.
+**6.** If your page from FOX News use **[fox_news.py](scrapy_spider/fox_news.py)**.For CNN US use **[cnn_news.py](scrapy_spider/cnn_news.py)**.
 
 **7.** After making the necessary changes start your spider with that command `scrapy crawl spider_name`.
 
-**8.** Scraping phase is complete now you can make prediction with [fake_news_detector.ipynb](fake_news_detector\fake_news_detector.ipynb) model.
+**8.** Scraping phase is complete now you can make prediction with [fake_news_detector.ipynb](fake_news_detector/fake_news_detector.ipynb) model.
