@@ -2,3 +2,4 @@ scrapy
 scikit-learn
 pandas
 nltk
+matplotlib
