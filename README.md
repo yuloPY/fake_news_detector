@@ -22,7 +22,7 @@ The code implements a text classification pipeline as follows:
  - Converting all text to lowercase.
  - Removing stopwords using the NLTK library.
 
-## Feature Ectraction:
+## Feature Extraction:
  - **TF-IDF Vectorization**:Converts text data into numerical features suitable for machine learning models.
 
 ## Classification:
