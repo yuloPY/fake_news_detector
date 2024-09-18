@@ -34,6 +34,7 @@ The code implements a text classification pipeline as follows:
 # Usage
 
 The main goal of mine project is scrap the data from **[FOX News](https://www.foxnews.com/)** and **[CNN US](https://edition.cnn.com/us)** and make a prediction with my **[fake_news_detector](fake_news_detector/fake_news_detector.ipynb)** model.
+
 (I hope that is legal.)
 
 I will explain here how do you use it in your computer.
