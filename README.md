@@ -23,10 +23,10 @@ The code implements a text classification pipeline as follows:
  - Removing stopwords using the NLTK library.
 
 ## Feature Ectraction:
- - **TF-IDF Vectorization**:Converts text data into numerical features suitable for machine learningmodels.
+ - **TF-IDF Vectorization**:Converts text data into numerical features suitable for machine learning models.
 
 ## Classification:
- -The model uses the **PassiveAggressiveClassifier**, a linear model that works well for large-scale text data. It updates weights in response to misclassified examples in an aggressive    manner.
+ -The model uses the **PassiveAggressiveClassifier**, a linear model that works well for large-scale text data. It updates weights in response to misclassified examples in an aggressive manner.
 
 *you can check the **[open_model.ipynb](open_model/open_model.ipynb)** file for more details.*
 
@@ -77,7 +77,7 @@ import scrapy
 
 class ExampleSpider(scrapy.Spider):
     name = "example"
-    allowed_domains = ["www.foxnews.com"]
+    allowed_domains = ["www.domain.com"]
     start_urls = ["example_foxpage_or_cnnpage.com"]
 
     def parse(self, response):
@@ -88,4 +88,4 @@ class ExampleSpider(scrapy.Spider):
 
 **7.** After making the necessary changes start your spider with that command `scrapy crawl spider_name`.
 
-**8.** Scraping phase is complete now you can make prediction with [fake_news_detector.ipynb](fake_news_detector\fake_news_detector.ipynb) model.
+**8.** Scraping phase is complete now you can make prediction with [fake_news_detector.ipynb](fake_news_detector/fake_news_detector.ipynb) model.
